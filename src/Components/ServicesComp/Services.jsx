@@ -7,8 +7,7 @@ const Services = () => {
     <div
       id="Services"
       style={{
-        minHeight: "120vh",
-        height: "auto",
+        height: "105vh",
         width: "100%",
         display: "flex",
         flexDirection: "column",
@@ -45,7 +44,6 @@ const Services = () => {
           minHeight: "70vh",
           height: "auto",
           width: "95vw",
-          padding: "1%",
         }}
       >
         <div
@@ -56,7 +54,7 @@ const Services = () => {
             alignItems: "center",
             justifyContent: "center",
             width: "28%",
-            height: "90%",
+            height: "80%",
             borderRadius: "10px",
 
             padding: "1%",
@@ -84,7 +82,7 @@ const Services = () => {
             alignItems: "center",
             justifyContent: "center",
             width: "28%",
-            height: "90%",
+            height: "80%",
             borderRadius: "10px",
 
             padding: "1%",
@@ -112,7 +110,7 @@ const Services = () => {
             alignItems: "center",
             justifyContent: "center",
             width: "28%",
-            height: "90%",
+            height: "80%",
 
             borderRadius: "10px",
             padding: "1%",

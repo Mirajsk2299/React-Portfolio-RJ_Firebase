@@ -1,19 +1,12 @@
 import React from "react";
 import logo from "../../images/red logo.jpg";
 import "../../App.css";
-import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top px-4">
       <div className="container-fluid">
-        <ScrollLink
-          to="Home"
-          smooth={true}
-          duration={500}
-          className="navbar-brand d-flex align-items-center"
-          style={{ cursor: "pointer" }}
-        >
+        <a className="navbar-brand d-flex align-items-center" href="#Home">
           <img
             src={logo}
             alt="Logo"
@@ -21,7 +14,7 @@ const Navbar = () => {
             className="me-2"
           />
           <span>Portfolio</span>
-        </ScrollLink>
+        </a>
 
         <button
           className="navbar-toggler"
@@ -41,56 +34,24 @@ const Navbar = () => {
         >
           <ul className="navbar-nav align-items-center" style={{ gap: "20px" }}>
             <li className="nav-item">
-              <ScrollLink
-                to="Home"
-                smooth={true}
-                duration={500}
-                className="nav-link text-dark fw-semibold"
-                style={{ cursor: "pointer" }}
-              >
+              <a className="nav-link" href="#Home">
                 Home
-              </ScrollLink>
+              </a>
             </li>
-
             <li className="nav-item">
-              <ScrollLink
-                to="Services"
-                smooth={true}
-                duration={500}
-                className="nav-link text-dark fw-semibold"
-                style={{ cursor: "pointer" }}
-              >
+              <a className="nav-link" href="#Services">
                 Services
-              </ScrollLink>
+              </a>
             </li>
-
             <li className="nav-item">
-              <ScrollLink
-                to="About"
-                smooth={true}
-                duration={500}
-                className="nav-link text-dark fw-semibold"
-                style={{ cursor: "pointer" }}
-              >
+              <a className="nav-link" href="#About">
                 About Me
-              </ScrollLink>
+              </a>
             </li>
-
             <li className="nav-item">
-              <ScrollLink
-                to="Contact"
-                smooth={true}
-                duration={500}
-                className="nav-link"
-                style={{ cursor: "pointer" }}
-              >
-                <button
-                  className="contact-btn text-dark fw-semibold"
-                  style={{ width: "10rem" }}
-                >
-                  Contact Me
-                </button>
-              </ScrollLink>
+              <a href="#Contact">
+                <button className="contact-btn">Contact Me</button>
+              </a>
             </li>
           </ul>
         </div>

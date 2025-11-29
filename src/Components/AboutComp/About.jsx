@@ -7,13 +7,11 @@ const About = () => {
     <div
       id="About"
       style={{
-        minHeight: "80vh",
-        height: "auto",
+        height: "90vh",
         width: "100%",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "1%",
       }}
     >
       <div

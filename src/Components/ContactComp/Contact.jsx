@@ -73,8 +73,7 @@ const Contact = () => {
           Contact Me
         </h1>
       </div>
-      {/* 
-      <div className="cnt-form"> */}
+
       <form
         id="contact_form"
         onSubmit={submitH}
@@ -168,7 +167,6 @@ const Contact = () => {
           </button>
         </div>
       </form>
-      {/* </div> */}
     </div>
   );
 };

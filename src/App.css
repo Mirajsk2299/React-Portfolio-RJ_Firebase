@@ -124,9 +124,9 @@ textarea {
 
 /* fas fa icons  */
 .icon-border {
-  border: 1px solid #000; /* border thickness + color */
+  border: 1px solid #000;
   padding: 7px;
-  border-radius: 10px; /* your 25px border roundness */
+  border-radius: 10px;
   color: black;
   transition: background-color 0.3s, transform 0.2s;
   cursor: pointer;
@@ -146,9 +146,11 @@ textarea {
   #Home {
     display: flex !important;
     flex-direction: column !important;
-
     align-items: center !important;
     justify-content: center !important;
+    min-height: 80vh !important;
+    height: auto !important;
+    padding: 2%;
   }
 
   .second-hombox {
@@ -180,12 +182,15 @@ textarea {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    min-height: 110vh !important;
+    height: auto !important;
   }
   .service-cards {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
+    padding: 2% !important;
   }
 
   .card-box {
@@ -200,6 +205,12 @@ textarea {
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
+  }
+
+  #About {
+    min-height: 90vh !important;
+    height: auto !important;
+    padding: 2% !important;
   }
 
   .about-second {
@@ -263,6 +274,21 @@ textarea {
 }
 
 @media (max-width: 400px) {
+  #Home {
+    margin-bottom: 30px;
+  }
+  #Services {
+    margin-bottom: 30px;
+  }
+
+  #About {
+    margin-bottom: 30px;
+  }
+
+  #Contact {
+    margin-bottom: 30px;
+  }
+
   #contact_form {
     width: 90%;
   }
@@ -386,5 +412,21 @@ textarea {
     justify-content: center !important;
     text-align: center !important;
     gap: 1.3rem !important;
+  }
+
+  .every-btn {
+    width: 8rem !important;
+  }
+  .hire-btn {
+    width: 10rem !important;
+  }
+
+  .about-names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    gap: 0.5rem;
   }
 }

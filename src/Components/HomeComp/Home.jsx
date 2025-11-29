@@ -31,8 +31,7 @@ const Home = () => {
       id="Home"
       style={{
         width: "100%",
-        minHeight: "80vh",
-        height: "auto",
+        height: "80vh",
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
@@ -43,13 +42,12 @@ const Home = () => {
         className="second-hombox"
         style={{
           width: "95vw",
-          minHeight: "90%",
-          height: "auto",
-          // backgroundColor: "rgba(179, 126, 126, 1)",
+          height: "90%",
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "center",
+          gap: "2rem",
           padding: "1%",
         }}
       >
@@ -57,7 +55,7 @@ const Home = () => {
           className="home-imgbox"
           style={{
             width: "45%",
-            height: "100%",
+            height: "85%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -82,7 +80,6 @@ const Home = () => {
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-
               textAlign: "center",
             }}
           >
@@ -137,7 +134,6 @@ const Home = () => {
                 display: "flex",
                 gap: "1rem",
 
-                display: "flex",
                 flexDirection: "row",
                 justifyContent: "center",
                 alignItems: "center",
