@@ -1,0 +1,390 @@
+* {
+  color: #000;
+}
+
+/* Navbar */
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: rgb(131, 129, 129);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.contact-btn {
+  border-radius: 20px;
+  border: 1.5px solid black;
+  background-color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* every-btn  */
+.every-btn {
+  width: 11rem;
+  height: 2.5rem;
+  border-radius: 25px;
+  border: 1.5px solid black;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.every-btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Services */
+
+.icon-border {
+  border: 2px solid #393a3a;
+  padding: 5px;
+  border-radius: 15%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hire-btn {
+  width: 15rem;
+  height: 2.7rem;
+  border-radius: 25px;
+  border: 1.5px solid black;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.hire-btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.card-box {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card-box:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.03);
+}
+
+/* About  */
+
+.about-names {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+/* Contact  */
+
+label {
+  margin-bottom: 10px;
+}
+
+.send-btn {
+  width: 35rem;
+  height: 3.2rem;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.send-btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+input {
+  padding: 8px;
+}
+
+textarea {
+  padding: 8px;
+}
+
+/* fas fa icons  */
+.icon-border {
+  border: 1px solid #000; /* border thickness + color */
+  padding: 7px;
+  border-radius: 10px; /* your 25px border roundness */
+  color: black;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.icon-border:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.07);
+}
+
+/* media Queries */
+@media (max-width: 750px) {
+  .contact-btn {
+    width: 8rem !important;
+  }
+
+  #Home {
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .second-hombox {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .home-imgbox {
+    width: 80vw !important;
+  }
+
+  .home-txt {
+    width: 80vw !important;
+  }
+
+  .home-name {
+    font-size: 3rem !important;
+  }
+
+  .every-btn {
+    width: 8rem;
+    margin-bottom: 8px !important;
+  }
+
+  #Services {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .service-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .card-box {
+    width: 70vw !important;
+  }
+  .service-head {
+    font-size: 2rem !important;
+  }
+  .service-footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .about-second {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .about-left {
+    width: 80vw !important;
+  }
+
+  .about-head {
+    font-size: 2.5rem !important;
+  }
+
+  .about-right {
+    width: 80vw !important;
+  }
+
+  .cont-head {
+    font-size: 2rem !important;
+  }
+  .cont-htxt {
+    font-size: 1.1rem !important;
+  }
+
+  .upper-boxcnt {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 1.3rem !important;
+  }
+
+  #contact_form {
+    width: 90%;
+  }
+
+  .fname-inp {
+    width: 20rem !important;
+  }
+
+  .lname-inp {
+    width: 20rem !important;
+  }
+
+  .email-inp {
+    width: 20rem !important;
+  }
+  .txt-inp {
+    width: 20rem !important;
+  }
+
+  .send-btn {
+    width: 20rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  #contact_form {
+    width: 90%;
+  }
+
+  .fname-inp {
+    width: 17rem !important;
+  }
+
+  .lname-inp {
+    width: 17rem !important;
+  }
+
+  .email-inp {
+    width: 17rem !important;
+  }
+  .txt-inp {
+    width: 17rem !important;
+  }
+
+  .send-btn {
+    width: 17rem !important;
+    height: 2.7rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .fname-inp {
+    width: 15rem !important;
+  }
+
+  .lname-inp {
+    width: 15rem !important;
+  }
+
+  .email-inp {
+    width: 15rem !important;
+  }
+  .txt-inp {
+    width: 15rem !important;
+  }
+
+  .send-btn {
+    width: 15rem !important;
+    height: 2.7rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .fname-inp {
+    width: 13rem !important;
+  }
+
+  .lname-inp {
+    width: 13rem !important;
+  }
+
+  .email-inp {
+    width: 13rem !important;
+  }
+  .txt-inp {
+    width: 13rem !important;
+  }
+
+  .send-btn {
+    width: 13rem !important;
+    height: 2.7rem;
+  }
+
+  .hire-btn {
+    width: 11rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .fname-inp {
+    width: 11rem !important;
+  }
+
+  .lname-inp {
+    width: 11rem !important;
+  }
+
+  .email-inp {
+    width: 11rem !important;
+  }
+  .txt-inp {
+    width: 11rem !important;
+  }
+
+  .send-btn {
+    width: 11rem !important;
+    height: 2.7rem;
+  }
+}
+
+@media (max-width: 200px) {
+  .fname-inp {
+    width: 9rem !important;
+  }
+
+  .lname-inp {
+    width: 9rem !important;
+  }
+
+  .email-inp {
+    width: 9rem !important;
+  }
+  .txt-inp {
+    width: 9rem !important;
+  }
+
+  .send-btn {
+    width: 9rem !important;
+    height: 2.7rem;
+  }
+
+  .footer-icons {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 1.3rem !important;
+  }
+}
